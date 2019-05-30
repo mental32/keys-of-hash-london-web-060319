@@ -1,5 +1,5 @@
 class Hash
   def keys_of(arguments)
-    # code goes here
+    arguments.collect { |arg| :select{ |k, v| v == arg } }
   end
 end
